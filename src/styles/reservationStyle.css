@@ -1,0 +1,92 @@
+
+.createMain3 {
+  max-width: 690px;
+  max-height: 780px;
+  margin: 60px auto;
+  text-align: center;
+  background-color: #eaeaea;
+  padding: 60px 20px;
+  align-items: center;
+  border-radius: 6px;
+}
+
+  h2 {
+  color: #426799;
+  font-size: 30px;
+  padding-right: 50px;
+  font-weight: 500;
+  }
+  
+  * {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+.read-more-btn {
+    font-family: var(--font-family-roboto);
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border:none;
+    background: #fff;
+    color:rgba(133, 133, 133, 0.9);
+   
+  }
+  
+  .read-more-btn:hover {
+    transform: translate(0,-5px) !important;
+    background: #f4f4f4;
+  }
+  
+  .react-calendar.hide {
+    display: none;
+  }
+
+ .dropdown-btn2 {
+    background: #fff;
+    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06); 
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 240px;
+    padding-left: 108px;
+    margin-left: 75px;
+    }
+
+    .hall {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 5px;
+      padding-left: -0px;
+    }
+
+    .dropdown-btn2 input {
+      padding: 9.4px 10px;
+      border: none;
+    }
+
+    .topic h2 {
+    color: #426799;
+    font-size: 30px;
+    padding-right: 50px;
+    font-weight: 500;
+    }
+    
+    .title {
+      font-size: 27px;
+      color: #3a3a3a;
+      text-align: center;
+  }
+     .Content2 {
+      padding: 3px 3px;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+  }

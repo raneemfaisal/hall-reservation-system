@@ -1,0 +1,73 @@
+.App {
+    padding-top: 20px;
+  }
+  
+.createMain2 {
+  max-width: 660px;
+  max-height: 640px;
+  margin: 90px auto;
+  text-align: center;
+  background-color: #eaeaea;
+  padding: 60px 20px;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.createMain2 h2 {
+  font-size: 27px;
+  color: #3a3a3a;
+  text-align: center;
+  padding-bottom: 15px;
+}
+label {
+    text-align: right;
+    display: block;
+    color: #426799;
+    font-size: 25px;
+    padding-right: 10px;
+    padding-left: 20px;
+    font-weight: 500;
+}
+
+
+.prevArrow {
+    padding-bottom: 10px;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  
+  .pass {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+  }
+
+
+  .read-more-btn {
+    font-family: var(--font-family-roboto);
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border:none;
+    background: #fff;
+    color:#426799;
+   
+  }
+  
+  .read-more-btn:hover {
+    transform: translate(0,-5px) !important;
+    background: #f4f4f4;
+    color:rgba(133, 133, 133, 0.9);
+  }
+  
+  .react-calendar.hide {
+    display: none;
+  }

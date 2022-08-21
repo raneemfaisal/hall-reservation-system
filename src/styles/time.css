@@ -1,0 +1,26 @@
+.checkbox-time {
+    padding-top: 2px;
+    margin-left: 60px;
+    padding-right: 50px;
+    line-height: 20px;
+    box-shadow: none;
+    width: 360px;
+    height: 200px;
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.checkBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 25px;
+    width: 50px;
+    height: 50px;
+}
+
+.labelTime {
+    color: black;
+    font-size: 22px;
+}

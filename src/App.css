@@ -1,38 +1,57 @@
+@import url('https://cdn.syncfusion.com/ej2/material.css');
+
 .App {
   text-align: center;
+  padding-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.createMain {
+  max-width: 700px;
+  max-height: 700px;
+  margin: 100px auto;
+  text-align: center;
+  background-color: #eaeaea;
+  padding: 150px 30px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+h2 :hover {
+  color: rgba(173, 173, 173, 0.6);
+  transform: translate(0,-5px) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+color: #FCFDFE;
+font-size: 50px;
+text-shadow: 4px 4px 4px #aaa;
+font-family: 'Cairo', sans-serif;
+}
+
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.createMain h2 {
+  font-size: 35px;
+  text-align: center;
+  color: #426799;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+header {
+  font-size: 17px;
+  text-align: right;
+  text-indent: 1350px;
+  color: #525353;
+  font-weight: bold;
+  font-style: oblique;
+  background-color: #eaeaea;
+  padding: 12px 25px;
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

@@ -1,0 +1,82 @@
+.createForm {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #eaeaea;
+     padding: 65px 30px;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.createForm label {
+    text-align: right;
+    display: block;
+    color: #426799;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.createForm h2 {
+    font-size: 27px;
+    color: #3a3a3a;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.createForm input {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+    
+}
+
+.createForm input:hover, input::after{
+    font-size: 18px;
+    border: none;
+    background-color: rgba(197, 197, 197, 0.7);
+}
+
+.createForm button {
+    background: #fff;
+    color: #426799;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.createForm button:hover {
+    transform: translate(0,-5px) !important;
+    background: #f4f4f4;
+    color:rgba(133, 133, 133, 0.9);
+}
+
+.createForm .Content {
+    padding: 3px 3px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.createForm p {
+    color: rgb(234, 3, 3);
+    text-align: right;
+}
+
+::placeholder {
+    text-align: right;
+  }
+
+  .prevArrow {
+    padding-bottom: 10px;
+    cursor: pointer;
+    text-align: left;
+  }

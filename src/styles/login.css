@@ -1,0 +1,117 @@
+.createLogin {
+    max-width: 500px;
+    margin: 150px auto;
+    text-align: center;
+    background-color: #eaeaea;
+    padding: 65px 30px;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.createLogin label {
+    text-align: right;
+    display: block;
+    color: #426799;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.createLogin h2 {
+    font-size: 27px;
+    color: #3a3a3a;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.createLogin input {
+    width: 100%;
+    padding: 8px 15px;
+    margin: 15px 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+    background: #fff;
+    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06); 
+    
+}
+
+.createLogin input:hover, input::after{
+    font-size: 18px;
+    border: none;
+    background-color: rgba(197, 197, 197, 0.7);
+}
+
+.createLogin button {
+    background: #fff;
+    color:#426799;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.createLogin button:hover {
+    transform: translate(0,-5px) !important;
+    background: #f4f4f4;
+    color:rgba(133, 133, 133, 0.9);
+}
+
+.createLogin .Content {
+    padding: 3px 3px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.createLogin p {
+    color: rgb(234, 3, 3);
+    text-align: right;
+    padding-left: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+::placeholder {
+    text-align: right;
+  }
+
+  img {
+    padding-left: 160px;
+    text-align: center;
+    padding-bottom: 10px;
+
+  }
+
+  .emailLogin {
+    display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 10px;
+  }
+
+  .passLogin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* .prevArrow {
+    padding-right: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+  } */
+
+  form {
+    z-index: 1000 !important;
+  }
+
+  h4 {
+    font-size: small;
+    color: #333;
+  }

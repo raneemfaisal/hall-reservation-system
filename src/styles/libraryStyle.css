@@ -1,0 +1,65 @@
+.App {
+    padding-top: 50px;
+  }
+
+  
+.createMain2 {
+  max-width: 650px;
+  max-height: 300px;
+  margin: 90px auto;
+  text-align: center;
+  background-color: #eaeaea;
+  padding: 110px 20px;
+  align-items: center;
+  border-radius: 6px;
+}
+
+  h2 {
+  color: #426799;
+  font-size: 30px;
+  padding-right: 25px;
+  }
+  
+  * {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+.read-more-btn {
+    font-family: var(--font-family-roboto);
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border:none;
+    background: #fff;
+    color:rgba(133, 133, 133, 0.9);
+
+   
+  }
+
+  .read-more-btn-box {
+    margin-top: 70px;
+  }
+  
+  .read-more-btn:hover {
+    transform: translate(0,-5px) !important;
+    background: #f4f4f4;
+  }
+
+  .prevArrow {
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .topic {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .topic h2{
+    font-size: 40px;
+  }

@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import { Outlet, Link } from "react-router-dom";
 import './App.css';
+import { IconContext } from "react-icons";
+import { RiAccountCircleFill } from "react-icons/ri";
 
-function App() {
+
+export default function App() {
+  const title = 'عمادة شؤون المكتبات ترحب بكن';
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <IconContext.Provider value={{color: '#525353', size: "1.3em"}}>
+        <Link to="/Login"><header>تسجيل الدخول <RiAccountCircleFill/></header></Link>
+        </IconContext.Provider>
+      <div className= 'Content'>
+      <h1> {title}</h1>
+      <div className='createMain'>
+          <Link to="/Reservation"><h2>احجز قاعتك الآن</h2></Link> 
+        </div>
+      <Outlet />
+      {/* <Footer/> */}
+      </div>
     </div>
   );
 }
-
-export default App;
