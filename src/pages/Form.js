@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import {React, useState, useEffect} from 'react';
+import {React, useState} from 'react';
 import { Outlet, Link } from "react-router-dom";
 import '../styles/form.css';
 // import Footer from './Footer';
@@ -39,7 +39,8 @@ export default function Form() {
     const info = {name, ID, email, phone};
     setFormError(validate(info));
     setIsSubmit(true);
-
+    if(isSubmit && Object.keys(formError).length === 0) {
+    
     emailjs.sendForm('service_5sfjgai', 'template_pswm396', e.target, 'c30N4bZw4GzcgadRz')
     .then((response) => {
       console.log('SUCCESS!', response.status, response.text);
@@ -49,6 +50,7 @@ export default function Form() {
    });
 
    createUser();
+  }
   };
 
       const notify = () => toast.success("تم تأكيد حجزك بنجاح", {position: "top-center",
@@ -59,16 +61,10 @@ export default function Form() {
       draggable: true,
       progress: undefined});
 
-  useEffect(() => {
-      console.log(formError);
-    if(isSubmit && Object.keys(formError).length === 0) {
-      console.log(name, ID, email, phone);
-    }
-  }, [formError])
 
   const validate = (values) => { //to validate if all the fields are not empty
     const errors = {};
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    const regex = /^[^\s@]+@student+\.ksu+\.edu+\.sa$/i;
     const phoneLength = values.phone.length;
     const IDLength = values.ID.length;
     if (!values.name){
@@ -118,7 +114,7 @@ export default function Form() {
             type="text"
             placeholder='الرقم الجامعي'
             value= {ID}
-            onChange = {(e) => setID(e.target.value)}
+            onChange = {(e) => setID(e.target.value.replace(/\D/g, ''))}
             />
             <p>{formError.ID}</p>
              <label>الايميل الجامعي</label>
@@ -135,7 +131,7 @@ export default function Form() {
             type="text"
             placeholder='رقم الجوال' 
             value= {phone}
-            onChange = {(e) => setPhone(e.target.value)}
+            onChange = {(e) => setPhone(e.target.value.replace(/\D/g, ''))}
             />
             <p>{formError.phone}</p>
             <ToastContainer
