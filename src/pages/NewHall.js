@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import {React, useState, useEffect} from 'react';
+import {React, useState} from 'react';
 import { Link } from "react-router-dom";
 import '../styles/newHall.css';
 import { IoIosArrowBack } from "react-icons/io";
@@ -20,6 +20,7 @@ import { addDoc } from 'firebase/firestore'
 export default function NewHall() {
   // eslint-disable-next-line no-unused-vars
   const [hallName, setHallName] = useState('');
+  const [hallPlace, setHallPlace] = useState('');
   const [hallImage, setHallImage] = useState(null);
   const [formError, setFormError] = useState({}); 
   const [isSubmit, setIsSubmit] = useState(false);
@@ -150,11 +151,11 @@ export default function NewHall() {
       }
   };
 
-  
   const createUser = async () => {   
     await addDoc(colRefHall, {
       hallLocation: selected,
       hallName: hallName,
+      hallPlace: hallPlace,
       hallType: selected2
    }).then(function(res){
      console.log("Data has been successfully added");
@@ -165,23 +166,21 @@ export default function NewHall() {
 
   const handleSubmit = (e) => {//function to prevent refresh page when click save
     e.preventDefault();
-    const info = {hallName, hallImage, selected, selected2};
+    const info = {hallName, hallImage, selected, selected2, hallPlace};
     setFormError(validate(info));
     setIsSubmit(true);
-    createUser();
-  };
+   
+      createUser();
 
-  useEffect(() => {
-      console.log(formError);
-    if(isSubmit && Object.keys(formError).length === 0) {
-      console.log(hallName, hallImage);
-    }
-  }, [formError])
+  };
 
   const validate = (values) => { //to validate if all the fields are not empty
     const errors = {};
     if (!values.hallName){
       errors.hallName = "هذا الحقل مطلوب";
+    }
+    if (!values.hallPlace){
+      errors.hallPlace = "هذا الحقل مطلوب";
     }
     if (!values.hallImage){
       errors.hallImage = "هذا الحقل مطلوب";
@@ -236,6 +235,18 @@ export default function NewHall() {
               />
             </div>
             <p>{formError.hallImage}</p>
+
+            <div className='name'>
+            <label>المكان</label>
+             <input
+            type="text"
+            placeholder='موقع القاعة' 
+            name= "hallPlace"
+            value= {hallPlace}
+            onChange = {(e) => setHallPlace(e.target.value)}
+            />
+            </div>
+            <p>{formError.hallPlace}</p>
             <ToastContainer
                     position="top-center"
                     autoClose={2000}
