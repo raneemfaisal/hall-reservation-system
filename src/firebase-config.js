@@ -6,13 +6,13 @@ import {
 } from 'firebase/firestore'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyB3Udd2c1mf35Y-QzWndauABnNbAa1ygMw",
-    authDomain: "hallreservation-afd94.firebaseapp.com",
-    projectId: "hallreservation-afd94",
-    storageBucket: "hallreservation-afd94.appspot.com",
-    messagingSenderId: "755307334016",
-    appId: "1:755307334016:web:79be47b6dbc2c6f15e9965",
-    measurementId: "G-Z3XWZZ66Q9"
+    apiKey: "AIzaSyCcuru78XcYoop8tl-TYTExmF5Sd2GXIW4",
+    authDomain: "hallsreservations.firebaseapp.com",
+    projectId: "hallsreservations",
+    storageBucket: "hallsreservations.appspot.com",
+    messagingSenderId: "202956536149",
+    appId: "1:202956536149:web:fc041446d83cc74ff217dc",
+    measurementId: "G-6GKPMNYWET"
   };
   
 
