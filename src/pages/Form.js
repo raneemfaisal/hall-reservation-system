@@ -40,7 +40,6 @@ export default function Form() {
     setFormError(validate(info));
     setIsSubmit(true);
     if(isSubmit && Object.keys(formError).length === 0) {
-    
     emailjs.sendForm('service_5sfjgai', 'template_pswm396', e.target, 'c30N4bZw4GzcgadRz')
     .then((response) => {
       console.log('SUCCESS!', response.status, response.text);
