@@ -144,7 +144,25 @@ export default function Form() {
                     draggable
                     pauseOnHover
                     />
-            <button>حفظ</button>
+            {/* <button>حفظ</button> */}
+
+            <div className="read-more-btn-box">
+              { name !== ''&& 
+              ID !== '' && 
+              email !== '' && 
+              phone !== '' ? 
+              <Link  to="/"> 
+              <button className="read-more-btn"> 
+                <strong>التالي</strong>
+              </button>
+              </Link> 
+              :  <button className="read-more-btn">  
+                  <strong>التالي</strong>
+                </button>
+              }
+              
+            </div>
+                
             
           </form>      
         </div>
