@@ -27,7 +27,6 @@ function Time({
   '1:00', 
   '2:00', 
   '3:00', 
-  '4:00', 
  ]; 
  const q = query(colRefReserve, where('LibraryName', '==', selectedLib)); 
  
