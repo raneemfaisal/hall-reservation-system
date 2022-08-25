@@ -1,7 +1,7 @@
 
 .createMain3 {
   max-width: 690px;
-  max-height: 780px;
+  max-height: 1780px;
   margin: 60px auto;
   text-align: center;
   background-color: #eaeaea;
@@ -89,4 +89,12 @@
       margin-bottom: 5px;
       display: flex;
       align-items: center;
+  }
+
+  img {
+    width: 250px;
+    height: 250px;
+    margin: 10px 60px;
+    align-items: center;
+    flex-direction: column;
   }
